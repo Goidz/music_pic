@@ -1,14 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Tilt Neon, sans-serif;
 }
-main {
-    flex: 1 0 auto;
+
+
+
+#header {
+    text-align: center;
+    color:rgb(32, 178, 170);
+    font-size: 3rem;
 }
+
 /* Hero img */
+/* Hero image. Image by : Photo by Andrea De Santis on Unsplash */
 #hero-img {
     height: 100vh;
     width: 100%;
-    background: url("../images/musicpic_background.jpg") no-repeat
-    center center/cover;
+    margin: 0;
+    padding: 0;
+    background: url("../images/musicpic_background.jpg") no-repeat center center/cover;
     position: relative;
 }

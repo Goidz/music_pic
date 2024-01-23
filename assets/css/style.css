@@ -32,20 +32,17 @@ body {
 
 #quiz-body {
     height: 600px;
-    background-color: rgba(118, 229, 229, 0.7);
+    background-color: rgba(118, 229, 229, 0.8);
     margin-top: 80px;
     margin-left: 30px;
     margin-right: 30px;
-}
-
-#question-one {
-    
 }
 
 .pic-one {
     background: url("../images/red-house.jpg") no-repeat center center/cover;
     height: 200px;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .pic-one, h3 {
@@ -53,8 +50,32 @@ body {
     font-size: 30px;
 }
 
-#answers-one {
-    display: inline-block;
-    
-    text-align: center;
+.answers {
+    padding-top: 20px; 
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.answers>input {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.next-button-container{
+    margin-top: 20px;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.next-button-container button{
+    width: 9rem;
+    height: 4rem;
+    border-radius: 8px;
+    font-size: large;
+    background: none;
+    background-color: darkslategray;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(60, 67, 137);
+    cursor: pointer;
+    outline: none;
 }

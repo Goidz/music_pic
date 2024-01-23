@@ -7,12 +7,18 @@ body {
     font-family: Tilt Neon, sans-serif;
 }
 
-
-
 #header {
+    background: url("../images/music_header.jpg") no-repeat center/cover;
+    height: 4rem;
+    margin-top: 0;
+}
+
+#header-text {
     text-align: center;
-    color:rgb(32, 178, 170);
+    color:rgb(46, 84, 239);
     font-size: 3rem;
+    margin-bottom: 4px;
+    font-weight: 400;
 }
 
 /* Hero img */
@@ -20,8 +26,35 @@ body {
 #hero-img {
     height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
     background: url("../images/musicpic_background.jpg") no-repeat center center/cover;
     position: relative;
+}
+
+#quiz-body {
+    height: 600px;
+    background-color: rgba(118, 229, 229, 0.7);
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#question-one {
+    
+}
+
+.pic-one {
+    background: url("../images/red-house.jpg") no-repeat center center/cover;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.pic-one, h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#answers-one {
+    display: inline-block;
+    
+    text-align: left;
 }

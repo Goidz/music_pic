@@ -16,19 +16,15 @@
         
         <div id="quiz-body">
           <div class="question-one">
-            <div class="pic-one">Question 1:</div>
-            <h3>This song was by an artist who famously played his guitar upside down.</h3>
-            <form class="answers" method="get">
-              <input  checked="checked" type="radio" id="qst1-a" name="qst1">
-              <label for="qst1-a">Murder in the Red Barn</label><br>
-              <input type="radio" id="qst1-b" name="qst1">
-              <label for="qst1-b">Red House</label><br>
-              <input type="radio" id="qst1-c" name="qst1">
-              <label for="qst1-c">Red Barchetta</label><br>
-              <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Next Question</button>
+            <img src="" id="image" >
+            <div class="pic-one"></div>
+            <h3 id="question-text">Question</h3>
+            <div id="option-holder">
+              <button class="answer" id="option1">Answer 1</button>
+              <button class="answer" id="option2">Answer 2</button>
+              <button class="answer" id="option3">Answer 3</button>
+              <button class="answer" id="option4">Answer 4</button>
             </div>
-            </form>
           </div>
         </div>
       </section>

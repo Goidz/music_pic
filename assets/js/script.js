@@ -7,6 +7,7 @@ let questionList = [
         { choice: "Red Barchetta", correct: false},
         { choice: "Out in the Fields", correct: false},
       ],
+      image: "assets/images/red-house.jpg",
     },
     {
       question: "This song is by an artist who famously played his guitar upside down",
@@ -33,7 +34,7 @@ let currentQuestion = null;
 
 /* Displaying the question and answers */
 function showQuestion(mainQuestion){
-    document.getElementById('image').src = questionList.image;
+    document.getElementById('image').src = questionList[0].image;
     document.getElementById('question-text').innerText = questionList[0].question;
     document.getElementById('option1').innerText = questionList[0].options[0].choice;
     document.getElementById('option2').innerText = questionList[0].options[1].choice;

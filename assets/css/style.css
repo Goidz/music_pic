@@ -1,10 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Tilt Neon, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero img */
+/* Hero image. Image by : Photo by Andrea De Santis on Unsplash */
+#hero-img {
+    min-height: 100vh;
+    width: 100%;
+    background: url("../images/musicpic_background.jpg") no-repeat center center/cover;
+    position: absolute;
 }
 
 /* Header image by weston m on Unsplash - sheet music */
@@ -22,29 +34,16 @@ body {
     font-weight: 400;
 }
 
-#question-text {
-    display: flex;
-    text-align: center;
-    margin-top: 10%;
-    font-size: 1.4rem;
-}
-
-#option-holder{
-    height: auto;
+#quiz-body {
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#option-holder button{
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-    height: 3rem;
-    width: 100%;
-    font-size: 1.1rem;
+    align-self: auto;
+    height: 80%;
+    background-color: rgba(118, 229, 229, 0.8);
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    position: relative;
 }
 
 #image{
@@ -54,25 +53,39 @@ body {
 
 #instruction {
     font-size: 1rem;
+    margin-top: 3%;
     margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    border: solid 1px
 }
 
-/* Hero img */
-/* Hero image. Image by : Photo by Andrea De Santis on Unsplash */
-#hero-img {
-    height: 100vh;
+#question-text {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.4rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+#option-holder{
+    height: auto;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-bottom: 20%;
+}
+
+#option-holder button{
+    display: block;
+    justify-content: center;
+    padding: 7px;
+    height: 3rem;
     width: 100%;
-    background: url("../images/musicpic_background.jpg") no-repeat center center/cover;
-    position: relative;
-}
-
-#quiz-body {
-    height: 80%;
-    background-color: rgba(118, 229, 229, 0.8);
-    margin-top: 15%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
+    font-size: 1.1rem;
 }
 
 /* Question 1 */

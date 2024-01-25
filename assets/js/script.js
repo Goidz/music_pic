@@ -10,14 +10,14 @@ let questionList = [
       image: "assets/images/red-house.jpg",
     },
     {
-      question: "This song is by an artist who famously played his guitar upside down",
+      question: "This song is by a band who's name was derived from a comcic book character, they also have a popular song referencing a type of alcohol",
       options: [
-        { choice: "Murder in the Red Barn", correctChoice: false},
-        { choice: "Red House", correctChoice: true},
-        { choice: "Red Barchetta", correctChoice: false},
-        { choice: "Out in the Fields", correctChoice: false},
+        { choice: "I Fought the Law-The Clash", correctChoice: false},
+        { choice: "Rusty Cage-Soundgarden", correctChoice: true},
+        { choice: "Jailbreak-Thin Lizzy", correctChoice: false},
+        { choice: "The Prisoner-Tears for Fears", correctChoice: false},
       ],
-      image: ".assets/images/piano-man.jpg"
+      image: "assets/images/jailbreak.jpg"
     },
     {
       question: "This song is by an artist who famously played his guitar upside down",
@@ -29,6 +29,7 @@ let questionList = [
       ],
     }    
 ];
+
 let questionIndex = 0;
 let currentQuestion = null;
 
@@ -44,3 +45,15 @@ function showQuestion(mainQuestion){
 };
 
 let quizQuestion = showQuestion();
+
+function showNextQuestion(){
+  currentQuestion = quizQuestion[questionIndex];
+  showQuestion(currentQuestion);
+  questionIndex = questionIndex++;
+}
+
+
+document.querySelectorAll('button.answer').forEach((button)=>{
+  button.addEventListener('click', showNextQuestion());
+
+})

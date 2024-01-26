@@ -1,3 +1,4 @@
+/* Question/answer section */
 let questionList = [
   {
     question: "This song is by an artist who famously played his guitar upside down",
@@ -37,12 +38,12 @@ let score = 0;
 
 /* Displaying the question and answers */
 function showQuestion(currentQuestion){
-    document.getElementById('image').src = currentQuestion.image;
-    document.getElementById('question-text').innerText = currentQuestion.question;
-    document.getElementById('option1').innerText = currentQuestion.options[0].choice;
-    document.getElementById('option2').innerText = currentQuestion.options[1].choice;
-    document.getElementById('option3').innerText = currentQuestion.options[2].choice;
-    document.getElementById('option4').innerText = currentQuestion.options[3].choice;
+    document.getElementById("image").src = currentQuestion.image;
+    document.getElementById("question-text").innerText = currentQuestion.question;
+    document.getElementById("option1").innerText = currentQuestion.options[0].choice;
+    document.getElementById("option2").innerText = currentQuestion.options[1].choice;
+    document.getElementById("option3").innerText = currentQuestion.options[2].choice;
+    document.getElementById("option4").innerText = currentQuestion.options[3].choice;
 };
 
 /* Displaying the next question */ 
@@ -53,6 +54,45 @@ function showNextQuestion(){
   showQuestion(currentQuestion); 
 };
 
+/* Resets the  next question from previous selection*/
+function resetOptions(){
+  document.querySelectorAll("button.answer").forEach((button)=>{
+    button.classList.remove("correct-answer");
+    button.classList.remove("wrong-answer");
+  });
+};
 
+/* User answer validation */
+function validateAnswer(event){
+  const clickedButton = event.target;
+  const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
+  const answer = currentQuestion.options[userAnswer];
+  /* if/else statement to check answers and award point/or not */
+  if (answer.correct === true){
+    console.info("Correct Answer");
+    score = score + 1;
+    clickedButton.classList.add("correct-answer");
+    document.getElementById("score").innerText = "Score:" + score;
+  }
+  else{
+    console.error("Wrong answer");
+    clickedButton.classList.add("wrong-answer");
+  } /* Adds timed intervals between questions (2 second intervals/ 2000 miliseconds) */
+  setTimeout(function(){
+    resetOptions();
+    showNextQuestion();
+  }, 2000)
+ 
+}
+/* TO DO!!! */
+function timer(){}
+
+/* TO DO!!! */
+function gameOver(){}
+
+document.querySelectorAll("button.answer").forEach((button)=>{
+  button.addEventListener("click", validateAnswer);
+
+});
 
 showQuestion(currentQuestion);

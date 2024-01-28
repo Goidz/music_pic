@@ -89,8 +89,9 @@ body {
 
 #option-holder button{
     display: block;
-    justify-content: center;
-    padding: 7px;
+    align-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
     height: 3rem;
     width: 100%;
     font-size: 1.1rem;

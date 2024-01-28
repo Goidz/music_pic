@@ -1,7 +1,7 @@
 /* Question/answer section */
 let questionList = [
   {
-    question: "This song is by an artist who famously played his guitar upside down",
+    question: "This song is by an artist who famously played his guitar upside down.",
     options: [
       { choice: "Murder in the Red Barn", correct: false},
       { choice: "Red House", correct: true},
@@ -11,7 +11,7 @@ let questionList = [
     image: "assets/images/red-house.jpg"
   },
   {
-    question: "This song is by a band who's name was derived from a comcic book character, they also have a popular song referencing a type of alcohol",
+    question: "This song is by a band who's name was derived from a comcic book character, they also have a popular song referencing a type of alcohol.",
     options: [
       { choice: "I Fought the Law- The Clash", correct: false},
       { choice: "Rusty Cage- Soundgarden", correct: false},
@@ -29,7 +29,38 @@ let questionList = [
       { choice: "Free Bird- Lynyrd Skynyrd", correct: true},
     ],
     image: "assets/images/free-bird.jpg"
-  },    
+  },
+  { 
+    question: "This song was by a British punk band whos self-titled debut album was released in 1977.",
+    options: [
+      { choice: "We Are London- Madness", correct: false},
+      { choice: "London Calling - The Clash", correct: true},
+      { choice: "Waterloo Sunset- The Kinks", correct: false},
+      { choice: "Westend Girls- Pet Shop Boys", correct: false},
+    ],
+    image: "assets/images/london-calling.jpg"
+  },
+  { 
+    question: "This song was by a band who first performed as The New Yardbirds.",
+    options: [
+      { choice: "Immigrant Song- Led Zeppelin", correct: true},
+      { choice: "The Refugee - U2", correct: false},
+      { choice: "Land of the Free- The Killers", correct: false},
+      { choice: "Illegal Alien- Genesis", correct: false},
+    ],
+    image: "assets/images/immigrant song.jpg"
+  },
+  { 
+    question: "This song is by a band whos drummer wrote most of their lyrics, he also wrote 6 books and passed awya in 2020.",
+    options: [
+      { choice: "Learning to fly- Pink Floyd", correct: false},
+      { choice: "Jet Airliner- Steve Miller Band", correct: false},
+      { choice: "Learb to Fly- Foo Fighters", correct: false},
+      { choice: "Fly by Night- Rush", correct: true},
+    ],
+    image: "assets/images/fly by night.jpg"
+  },
+          
 ];
 
 let questionIndex = 0;
@@ -48,7 +79,7 @@ function showQuestion(currentQuestion){
 
 /* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
-  if (questionIndex < 1) {
+  if (questionIndex < 12) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
     showQuestion(currentQuestion);
@@ -83,7 +114,7 @@ function validateAnswer(event){
   setTimeout(function(){
     resetOptions();
     showNextQuestion();
-  }, 2000)
+  }, 1000)
  
 }
 /* TO DO!!! */

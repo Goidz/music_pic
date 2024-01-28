@@ -109,8 +109,20 @@ body {
 #score{
     color: rgb(246, 243, 64);
     text-align: center;
-    margin-top: 3%;
-    padding-bottom: 3%;
+    font-size: 1.3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    border: 2px solid ;
+    border-radius: 15px;
+}
+
+#score h3 {
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
  /* Question 1 */

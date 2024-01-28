@@ -46,13 +46,15 @@ function showQuestion(currentQuestion){
     document.getElementById("option4").innerText = currentQuestion.options[3].choice;
 };
 
-/* Displaying the next question */ 
+/* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
-  questionIndex = questionIndex + 1;
-  currentQuestion = questionList[questionIndex];
-  /* Figure out if end of quiz!!!!! */
-  showQuestion(currentQuestion); 
+  if (questionIndex < 1) {
+    questionIndex = questionIndex + 1;
+    currentQuestion = questionList[questionIndex];
+    showQuestion(currentQuestion);
+  }
 };
+
 
 /* Resets the  next question from previous selectionv*/
 function resetOptions(){

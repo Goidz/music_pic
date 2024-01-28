@@ -55,10 +55,20 @@ let questionList = [
     options: [
       { choice: "Learning to fly- Pink Floyd", correct: false},
       { choice: "Jet Airliner- Steve Miller Band", correct: false},
-      { choice: "Learb to Fly- Foo Fighters", correct: false},
+      { choice: "Learn to Fly- Foo Fighters", correct: false},
       { choice: "Fly by Night- Rush", correct: true},
     ],
     image: "assets/images/fly by night.jpg"
+  },
+  { 
+    question: "This song is by a band who played Woodstock after The Grateful Dead at 3am, founded by 2 brothers and their two High-School friends.",
+    options: [
+      { choice: "Black Magic Woman- Santana", correct: false},
+      { choice: "Don't Kill the Magic- Magic!", correct: false},
+      { choice: "3 Is a Magic Number- Blind Melon", correct: false},
+      { choice: "I Put a Spell on You- Creedence Clearwater Revival", correct: true},
+    ],
+    image: "assets/images/i put a spell on you.jpg"
   },
           
 ];

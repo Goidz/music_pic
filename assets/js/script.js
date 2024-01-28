@@ -20,16 +20,16 @@ let questionList = [
     ],
     image: "assets/images/jailbreak.jpg"
   },
-    {
-      question: "Several of this band's members died in a plane crash. They have a hit song about a Southern State.",
-      options: [
-        { choice: "I want to Break Free- Queen", correct: false},
-        { choice: "Free as a Bird- The Beatles", correct: false},
-        { choice: "I wanna be Free- The Monkeys", correct: false},
-        { choice: "Free Bird- Lynyrd Skynyrd", correct: true},
-      ],
-      image: "assets/images/free-bird.jpg"
-    },    
+  { 
+    question: "Several of this band's members died in a plane crash. They have a hit song about a Southern State.",
+    options: [
+      { choice: "I want to Break Free- Queen", correct: false},
+      { choice: "Free as a Bird- The Beatles", correct: false},
+      { choice: "I wanna be Free- The Monkeys", correct: false},
+      { choice: "Free Bird- Lynyrd Skynyrd", correct: true},
+    ],
+    image: "assets/images/free-bird.jpg"
+  },    
 ];
 
 let questionIndex = 0;
@@ -54,7 +54,7 @@ function showNextQuestion(){
   showQuestion(currentQuestion); 
 };
 
-/* Resets the  next question from previous selection*/
+/* Resets the  next question from previous selectionv*/
 function resetOptions(){
   document.querySelectorAll("button.answer").forEach((button)=>{
     button.classList.remove("correct-answer");

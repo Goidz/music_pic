@@ -38,7 +38,6 @@ body {
 /* Quiz body */
 #quiz-body {
     display: block;
-    align-self: auto;
     height: 80%;
     background-color: rgba(118, 229, 229, 0.8);
     margin-top: 15%;
@@ -56,13 +55,18 @@ body {
 
 /* Instruction section */
 #instruction {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
     text-align: center;
-    border: solid 1px
+    border: solid 1px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+
 }
 /* Question sections and answer buttons */
 #question-text {
@@ -80,6 +84,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 #option-holder button{

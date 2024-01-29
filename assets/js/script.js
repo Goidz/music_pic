@@ -89,13 +89,15 @@ function showQuestion(currentQuestion){
 
 /* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
-  if (questionIndex < 12) {
+  if (questionIndex < 4) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
     showQuestion(currentQuestion);
   }
+  else{
+    gameOver();
+  }
 };
-
 
 /* Resets the  next question from previous selectionv*/
 function resetOptions(){
@@ -115,7 +117,7 @@ function validateAnswer(event){
     console.info("Correct Answer");
     score = score + 1;
     clickedButton.classList.add("correct-answer");
-    document.getElementById("score").innerText = "Score:" + score;
+    document.getElementById("score").innerText = `Score: ${score}/5`;
   }
   else{
     console.error("Wrong answer");
@@ -125,13 +127,17 @@ function validateAnswer(event){
     resetOptions();
     showNextQuestion();
   }, 1000)
- 
 }
+
+/* TO DO!!! */
+function gameOver(){
+  document.getElementById("score").innerText = `Game Over! You <scored ${score}/5`;
+}
+
 /* TO DO!!! */
 function timer(){}
 
-/* TO DO!!! */
-function gameOver(){}
+
 
 document.querySelectorAll("button.answer").forEach((button)=>{
   button.addEventListener("click", validateAnswer);

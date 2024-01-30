@@ -15,24 +15,26 @@ body {
 #hero-img {
     min-height: 100vh;
     width: 100%;
-    background: url("../images/musicpic_background.jpg") no-repeat center center/cover;
+    background: url("../images/music-pic_background.jpg") no-repeat center center/cover;
     position: absolute;
 }
 
 /* Header */
 /* Header image by weston m on Unsplash - sheet music */
-#header {
-    background: url("../images/music_header.jpg") no-repeat center/cover;
+/*#header {
+    background: url("../images/music-header.jpg") no-repeat center/cover;
     height: 4rem;
     margin-top: 0;
-}
+}*/
 
 #header-text {
     text-align: center;
-    color:rgb(46, 84, 239);
+    color:rgb(214, 221, 10);
+    text-decoration: underline;
     font-size: 3rem;
-    margin-bottom: 4px;
-    font-weight: 400;
+    margin-top: 3%;
+    padding-bottom: 3%;
+    font-weight: 600;
 }
 
 /* Quiz body */
@@ -40,7 +42,7 @@ body {
     display: block;
     height: 80%;
     background-color: rgba(118, 229, 229, 0.8);
-    margin-top: 15%;
+    margin-top: 3%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
@@ -81,11 +83,10 @@ body {
 /* Question sections and answer buttons */
 #question-text {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 1.4rem;
     margin-left: 2%;
     margin-right: 2%;
-    margin-bottom: 5%;
 }
 
 #option-holder{
@@ -112,7 +113,6 @@ body {
     background-color: green !important;
 }
 
-
 .wrong-answer{
     background-color: red !important;
 }
@@ -135,6 +135,68 @@ body {
 #score h3 {
     padding-left: 1%;
     padding-right: 1%;
+}
+
+
+
+/* Media queries min-width 768 */
+@media screen and (min-width: 768px){
+    #header{
+        height: 5rem;
+    }
+
+    #header-text{
+        font-size: 4.5rem;
+        margin-top: 0;
+    }
+
+    #instruction {
+        font-size: 1.7rem;
+        border: solid 2px;
+    }
+
+    #start{
+        font-size: 1.5rem;
+    }
+
+    #question-text {
+        margin-top: 5%;
+        font-size: 2rem;
+    }
+    
+    #option-holder{
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 4%;
+        padding-bottom: 4%;
+    }
+    
+    #option-holder button{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        height: 5rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #score{
+        
+        
+        font-size: 1.5rem;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        border: 2px solid ;
+        border-radius: 15px;
+    }
+    
+    #score h3 {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
 
  /* Question 1 */

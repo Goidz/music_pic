@@ -119,6 +119,9 @@ function resetOptions(){
   });
 };
 
+/* Using The Durstenfeld Shuffle. 
+Found on Pitayan(https://pitayan.com/posts/javascript-shuffle-array/) which directed me to
+ webbower (https://gist.github.com/webbower/8d19b714ded3ec53d1d7ed32b79fdbac) where I sourced it from */
 function shuffle(questionList) {
     for (let i = questionList.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));

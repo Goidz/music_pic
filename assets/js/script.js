@@ -1,5 +1,15 @@
 /* Question/answer section */
 let questionList = [
+  { 
+    question: "David Bowie helped produce this band's third album and together with the vocalist wrote China girl",
+    options: [
+      { choice: "Black Dog- Led Zeppelin", correct: false},
+      { choice: "I Wanna be Your Dog- The Stooges.", correct: true},
+      { choice: "Stray Dog- New Order", correct: false},
+      { choice: "Shake Dog Shake- The Cure", correct: false},
+    ],
+    image: "assets/images/i wanna be your dog.jpg" 
+  },
   {
     question: "This song is by an artist who famously played his guitar upside down.",
     options: [
@@ -70,6 +80,27 @@ let questionList = [
     ],
     image: "assets/images/i put a spell on you.jpg"
   },
+  { 
+    question: "This band made the Guinness Book of Records for loudest concert and created the first successful Rock Opera.",
+    options: [
+      { choice: "A Thousand Miles Away- The Heartbeats", correct: false},
+      { choice: "Eight Miles High- The Byrds.", correct: false},
+      { choice: "I can see for Miles- The Who", correct: true},
+      { choice: "3/5 of a Mile in 10 Seconds- Jefferson Airplane", correct: false},
+    ],
+    image: "assets/images/i can see for miles.jpg"
+  },
+  { 
+    question: "This band was managed by Andy Warhol and they're named after a paper-back adult novel.",
+    options: [
+      { choice: "Venus in furs- The Velvet Underground", correct: true},
+      { choice: "Jupiter Crash- The Cure.", correct: false},
+      { choice: "Venus- Shocking Blue", correct: false},
+      { choice: "Moonchild- Iron Maiden", correct: false},
+    ],
+    image: "assets/images/venus in furs.jpg" 
+  },
+  
 ];
 
 let questionIndex = 0;
@@ -100,7 +131,7 @@ function showQuestion(currentQuestion){
 
 /* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
-  shuffle(questionList);
+  
   if (questionIndex < 4) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];

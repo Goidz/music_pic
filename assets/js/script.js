@@ -70,12 +70,23 @@ let questionList = [
     ],
     image: "assets/images/i put a spell on you.jpg"
   },
-          
 ];
 
 let questionIndex = 0;
 let currentQuestion = questionList[questionIndex];
 let score = 0;
+
+/* Need help from mentor
+function start(event){
+  document.querySelectorAll("button.start").textContent = event.target;
+  document.querySelectorAll("button.start").forEach((button)=>{
+  button.addEventListener("click", start); 
+  shuffle(questionList);
+  showQuestion(currentQuestion)
+  score = 0;
+  questionIndex = 0;
+})
+};*/
 
 /* Displaying the question and answers */
 function showQuestion(currentQuestion){
@@ -89,6 +100,7 @@ function showQuestion(currentQuestion){
 
 /* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
+  shuffle(questionList);
   if (questionIndex < 4) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
@@ -99,7 +111,7 @@ function showNextQuestion(){
   }
 };
 
-/* Resets the  next question from previous selectionv*/
+/* Resets the  next question from previous selection */
 function resetOptions(){
   document.querySelectorAll("button.answer").forEach((button)=>{
     button.classList.remove("correct-answer");
@@ -107,7 +119,14 @@ function resetOptions(){
   });
 };
 
-/* User answer validation */
+function shuffle(questionList) {
+    for (let i = questionList.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [questionList[i], questionList[j]] = [questionList[j], questionList[i]];
+    }
+};
+
+ /* User answer validation */
 function validateAnswer(event){
   const clickedButton = event.target;
   const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
@@ -122,22 +141,16 @@ function validateAnswer(event){
   else{
     console.error("Wrong answer");
     clickedButton.classList.add("wrong-answer");
-  } /* Adds timed intervals between questions (2 second intervals/ 2000 miliseconds) */
+  } /* Adds timed intervals between questions (1 second intervals/ 1000 miliseconds) */
   setTimeout(function(){
     resetOptions();
     showNextQuestion();
   }, 1000)
 }
 
-/* TO DO!!! */
 function gameOver(){
-  document.getElementById("score").innerText = `Game Over! You <scored ${score}/5`;
+  document.getElementById("score").innerText = `Game Over! You scored ${score}/5`;
 }
-
-/* TO DO!!! */
-function timer(){}
-
-
 
 document.querySelectorAll("button.answer").forEach((button)=>{
   button.addEventListener("click", validateAnswer);

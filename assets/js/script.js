@@ -132,7 +132,7 @@ const maxQuizQuestions = 5;
 let startGame = document.getElementById("start");
 startGame.addEventListener("click", start);
 
-
+/* Starting the quiz */
 function start(){
   document.getElementById("score").innerText = "Score: 0";
   shuffle(questionList);
@@ -141,8 +141,7 @@ function start(){
   currentQuestion = questionList[questionIndex];
   showQuestion(currentQuestion);
   document.getElementById("question-holder").classList.remove("hidden");
-};
-
+}
 
 /* Displaying the question and answers */
 function showQuestion(currentQuestion){
@@ -156,7 +155,6 @@ function showQuestion(currentQuestion){
 
 /* Displaying the next question. Timer to skip to next question */ 
 function showNextQuestion(){
-  
   if (questionIndex < maxQuizQuestions - 1) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
@@ -187,9 +185,11 @@ function shuffle(questionList) {
 
  /* User answer validation */
 function validateAnswer(event){
-  const clickedButton = event.target;
-  const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
-  const answer = currentQuestion.options[userAnswer];
+  if(buttonBlocked === false){
+     buttonBlocked = true;
+    const clickedButton = event.target;
+    const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
+    const answer = currentQuestion.options[userAnswer];
   /* if/else statement to check answers and award point/or not */
   if (answer.correct === true){
     console.info("Correct Answer");
@@ -200,16 +200,25 @@ function validateAnswer(event){
   else{
     console.error("Wrong answer");
     clickedButton.classList.add("wrong-answer");
-  } /* Adds timed intervals between questions (2 second intervals/ 2000 miliseconds) */
+  } 
+  /* Adds timed intervals between questions and reset game. (2 second intervals/ 2000 miliseconds) */
   setTimeout(function(){
     resetOptions();
     showNextQuestion();
-  }, 2000)
+    buttonBlocked = false;
+  }, 1500)
 }
+};
 
 function gameOver(){
   document.getElementById("score").innerText = `Game Over! You scored ${score}/5`;
-}
+};
+
+/* Restart message and option */
+function gameOver(){
+  document.getElementById('question-holder').classList.add('hidden');
+  document.getElementById("score").innerText = `Game Over! You scored ${score}/5. Click the start button to try again!`;
+};
 
 document.querySelectorAll("button.answer").forEach((button)=>{
   button.addEventListener("click", validateAnswer);

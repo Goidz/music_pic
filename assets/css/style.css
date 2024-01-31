@@ -77,10 +77,10 @@ body {
     color: black;
     background-color: rgb(246, 243, 64);
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 2%;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 #start i{
@@ -182,12 +182,12 @@ body {
     }
 
     #start{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 3%;
     }
 
     #start i {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #question-text {

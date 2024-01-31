@@ -94,22 +94,41 @@ let questionList = [
     question: "This band was managed by Andy Warhol and they're named after a paper-back adult novel.",
     options: [
       { choice: "Venus in furs- The Velvet Underground", correct: true},
-      { choice: "Jupiter Crash- The Cure.", correct: false},
+      { choice: "Jupiter Crash- The Cure", correct: false},
       { choice: "Venus- Shocking Blue", correct: false},
       { choice: "Moonchild- Iron Maiden", correct: false},
     ],
     image: "assets/images/venus in furs.jpg" 
   },
-  
+  { 
+    question: "This was a British-American rock band originating from London. They are named after the rhythm-section members.",
+    options: [
+      { choice: "Unchained- Van Halen", correct: false},
+      { choice: "Rocky Paths- Hawkwind", correct: false},
+      { choice: "Safety Chain Blues- Midnight Oil", correct: false},
+      { choice: "The Chain- Fleetwood Mac", correct: true},
+    ],
+    image: "assets/images/the chain.jpg" 
+  },
+  { 
+    question: "Born in Ireland with influences such as Muddy Waters and Lead Belly, this artist released an album who's title is used for a die with 2 spots.",
+    options: [
+      { choice: "So Far Away- Rod Steward", correct: false},
+      { choice: "I can see for Miles- The Who", correct: false},
+      { choice: "A Thousand Miles Away- The Heartbeats", correct: false},
+      { choice: "A Million Miles Away- Rory Gallagher", correct: true},
+    ],
+    image: "assets/images/a million miles away.jpg" 
+  },
 ];
 
 let questionIndex = 0;
 let currentQuestion = questionList[questionIndex];
 let score = 0;
-
+/* 
 let startGame = document.getElementById("start");
 start.addEventListener("click", shuffle);
-
+*/
 /* 
 function start(event){
   document.querySelectorAll("button.start").textContent = event.target;
@@ -135,7 +154,7 @@ function showQuestion(currentQuestion){
 /* Displaying the next question if question a certain length */ 
 function showNextQuestion(){
   
-  if (questionIndex < 4) {
+  if (questionIndex < 20) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
     showQuestion(currentQuestion);

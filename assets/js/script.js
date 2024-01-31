@@ -1,7 +1,7 @@
 /* Question/answer section */
 let questionList = [
   { 
-    question: "David Bowie helped produce this band's third album and together with the vocalist wrote China girl",
+    question: "David Bowie helped produce this band's third album and together with the vocalist wrote 'China girl'.",
     options: [
       { choice: "Black Dog- Led Zeppelin", correct: false},
       { choice: "I Wanna be Your Dog- The Stooges.", correct: true},
@@ -107,7 +107,10 @@ let questionIndex = 0;
 let currentQuestion = questionList[questionIndex];
 let score = 0;
 
-/* Need help from mentor
+let startGame = document.getElementById("start");
+start.addEventListener("click", shuffle);
+
+/* 
 function start(event){
   document.querySelectorAll("button.start").textContent = event.target;
   document.querySelectorAll("button.start").forEach((button)=>{

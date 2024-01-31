@@ -154,17 +154,16 @@ function showQuestion(currentQuestion){
     document.getElementById("option4").innerText = currentQuestion.options[3].choice;
 };
 
-/* Displaying the next question.  */ 
+/* Displaying the next question. Timer to skip to next question */ 
 function showNextQuestion(){
   
   if (questionIndex < maxQuizQuestions - 1) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
     showQuestion(currentQuestion);
-    showQuestion(currentQuestion);
   }
   else{
-    setTimeout(gameOver, 2000);
+    setTimeout(gameOver, 1500);
   }
 };
 

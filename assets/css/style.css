@@ -46,8 +46,9 @@ body {
 
 /* Quiz question images */
 #image{
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 10%;
 }
 
 .hidden{
@@ -69,7 +70,7 @@ body {
     padding-left: 2%;
 }
 
-/* start nutton- Start game */
+/* start button- Start game */
 #start{
     color: black;
     background-color: rgb(246, 243, 64);
@@ -135,6 +136,7 @@ body {
     padding-bottom: 1.5%;
     border: 2px solid ;
     border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #score h3 {
@@ -162,6 +164,45 @@ body {
     font-size: 1.3rem;
 }
 
+/* Media queries min-width 320-375 */
+@media screen and (min-width: 320px) and (max-width: 390px){
+    #instruction {
+        font-size: 1rem;
+    }
+
+    #start{
+        font-size: 0.8rem;
+    }
+    
+    #start i{
+        font-size: 1rem;
+    }
+
+    #question-text {
+        margin-top: 6%;
+        font-size: 1.2rem;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #option-holder{
+       
+        margin-left: 7%;
+        margin-right: 7%;   
+    }
+    
+    #option-holder button{
+        height: 2.5rem;
+        width: 100%;
+        font-size: 0.8rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #score{
+        font-size: 1.1rem;
+    }
+}
+
 /* Media queries min-width 768 */
 @media screen and (min-width: 768px){
     #header{
@@ -177,6 +218,12 @@ body {
         font-size: 1.7rem;
         border: solid 2px;
     }
+
+    #image{
+        width: 70%;
+        height: 400px;
+        margin-left: 15%;
+      }
 
     #start{
         font-size: 1.2rem;

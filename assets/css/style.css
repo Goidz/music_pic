@@ -22,14 +22,6 @@ body {
     position: absolute;
 }
 
-/* Header */
-/* Header image by weston m on Unsplash - sheet music */
-/*#header {
-    background: url("../images/music-header.jpg") no-repeat center/cover;
-    height: 4rem;
-    margin-top: 0;
-}*/
-
 #header-text {
     text-align: center;
     color:rgb(214, 221, 10);
@@ -58,6 +50,10 @@ body {
     height: auto;
 }
 
+.hidden{
+    display: none !important;
+}
+
 /* Instruction section */
 #instruction {
     font-size: 1.3rem;
@@ -73,6 +69,7 @@ body {
     padding-left: 2%;
 }
 
+/* start nutton- Start game */
 #start{
     color: black;
     background-color: rgb(246, 243, 64);

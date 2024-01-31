@@ -122,24 +122,27 @@ let questionList = [
   },
 ];
 
+let buttonBlocked = false;
 let questionIndex = 0;
 let currentQuestion = questionList[questionIndex];
 let score = 0;
-/* 
+/* The quiz length */
+const maxQuizQuestions = 5;
+/* Start button to start game */
 let startGame = document.getElementById("start");
-start.addEventListener("click", shuffle);
-*/
-/* 
-function start(event){
-  document.querySelectorAll("button.start").textContent = event.target;
-  document.querySelectorAll("button.start").forEach((button)=>{
-  button.addEventListener("click", start); 
+startGame.addEventListener("click", start);
+
+
+function start(){
+  document.getElementById("score").innerText = "Score: 0";
   shuffle(questionList);
-  showQuestion(currentQuestion)
   score = 0;
   questionIndex = 0;
-})
-};*/
+  currentQuestion = questionList[questionIndex];
+  showQuestion(currentQuestion);
+  document.getElementById("question-holder").classList.remove("hidden");
+};
+
 
 /* Displaying the question and answers */
 function showQuestion(currentQuestion){
@@ -151,16 +154,17 @@ function showQuestion(currentQuestion){
     document.getElementById("option4").innerText = currentQuestion.options[3].choice;
 };
 
-/* Displaying the next question if question a certain length */ 
+/* Displaying the next question.  */ 
 function showNextQuestion(){
   
-  if (questionIndex < 20) {
+  if (questionIndex < maxQuizQuestions - 1) {
     questionIndex = questionIndex + 1;
     currentQuestion = questionList[questionIndex];
     showQuestion(currentQuestion);
+    showQuestion(currentQuestion);
   }
   else{
-    gameOver();
+    setTimeout(gameOver, 2000);
   }
 };
 
@@ -197,11 +201,11 @@ function validateAnswer(event){
   else{
     console.error("Wrong answer");
     clickedButton.classList.add("wrong-answer");
-  } /* Adds timed intervals between questions (1 second intervals/ 1000 miliseconds) */
+  } /* Adds timed intervals between questions (2 second intervals/ 2000 miliseconds) */
   setTimeout(function(){
     resetOptions();
     showNextQuestion();
-  }, 1000)
+  }, 2000)
 }
 
 function gameOver(){
@@ -213,4 +217,3 @@ document.querySelectorAll("button.answer").forEach((button)=>{
 
 });
 
-showQuestion(currentQuestion);

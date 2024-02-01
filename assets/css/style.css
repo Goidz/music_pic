@@ -15,7 +15,6 @@ body {
 }
 
 /* Hero img */
-/* Hero image. Image by : Photo by Andrea De Santis on Unsplash */
 #hero-img {
     min-height: 100vh;
     width: 100%;
@@ -23,6 +22,7 @@ body {
     position: absolute;
 }
 
+/* Header Text */
 #header-text {
     text-align: center;
     color:rgb(214, 221, 10);
@@ -52,6 +52,7 @@ body {
     margin-left: 10%;
 }
 
+/* Hides image on start page so there's a distinction between start and game pages */
 .hidden{
     display: none !important;
 }

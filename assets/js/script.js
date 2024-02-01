@@ -1,13 +1,14 @@
 /* Question/answer section */
 let questionList = [
-  { 
-    question: "David Bowie helped produce this band's third album and together with the vocalist wrote 'China girl'.",
+  {
+    question: "David Bowie helped produce this band's third album. Together with the band's vocalist Bowie wrote 'China girl'.",
     options: [
       { choice: "Black Dog- Led Zeppelin", correct: false},
       { choice: "I Wanna be Your Dog- The Stooges.", correct: true},
       { choice: "Stray Dog- New Order", correct: false},
       { choice: "Shake Dog Shake- The Cure", correct: false},
     ],
+    //- [ ] Photo by Don Agnello on Unsplash
     image: "assets/images/i wanna be your dog.jpg" 
   },
   {
@@ -18,16 +19,18 @@ let questionList = [
       { choice: "Red Barchetta", correct: false},
       { choice: "Out in the Fields", correct: false},
     ],
+    //Photo by Aron Fjell on Unsplash 
     image: "assets/images/red-house.jpg"
   },
   {
-    question: "This song is by a band who's name was derived from a comcic book character, they also have a popular song referencing a type of alcohol.",
+    question: "This song is by a band who's name was derived from a comcic book character. They also have a popular song referencing a type of alcohol.",
     options: [
       { choice: "I Fought the Law- The Clash", correct: false},
       { choice: "Rusty Cage- Soundgarden", correct: false},
       { choice: "Jailbreak- Thin Lizzy", correct: true},
       { choice: "The Prisoner- Tears for Fears", correct: false},
     ],
+    //Photo by Emiliano Bar on Unsplash
     image: "assets/images/jailbreak.jpg"
   },
   { 
@@ -38,16 +41,18 @@ let questionList = [
       { choice: "I wanna be Free- The Monkeys", correct: false},
       { choice: "Free Bird- Lynyrd Skynyrd", correct: true},
     ],
+    //Photo by Hasan Almasi on Unsplash 
     image: "assets/images/free-bird.jpg"
   },
   { 
-    question: "This song was by a British punk band whos self-titled debut album was released in 1977.",
+    question: "This song was by a British punk band. Their self-titled debut album was released in 1977.",
     options: [
       { choice: "We Are London- Madness", correct: false},
       { choice: "London Calling - The Clash", correct: true},
       { choice: "Waterloo Sunset- The Kinks", correct: false},
       { choice: "Westend Girls- Pet Shop Boys", correct: false},
     ],
+    //Photo by John Jackson on Unsplash
     image: "assets/images/london-calling.jpg"
   },
   { 
@@ -58,6 +63,7 @@ let questionList = [
       { choice: "Land of the Free- The Killers", correct: false},
       { choice: "Illegal Alien- Genesis", correct: false},
     ],
+    //Photo by Boston Public Library on Unsplash
     image: "assets/images/immigrant song.jpg"
   },
   { 
@@ -68,6 +74,7 @@ let questionList = [
       { choice: "Learn to Fly- Foo Fighters", correct: false},
       { choice: "Fly by Night- Rush", correct: true},
     ],
+    //Photo by Katie Hetland on Unsplash
     image: "assets/images/fly by night.jpg"
   },
   { 
@@ -78,6 +85,7 @@ let questionList = [
       { choice: "3 Is a Magic Number- Blind Melon", correct: false},
       { choice: "I Put a Spell on You- Creedence Clearwater Revival", correct: true},
     ],
+    //Photo by Elena Mozhvilo on Unsplash
     image: "assets/images/i put a spell on you.jpg"
   },
   { 
@@ -88,6 +96,7 @@ let questionList = [
       { choice: "I can see for Miles- The Who", correct: true},
       { choice: "3/5 of a Mile in 10 Seconds- Jefferson Airplane", correct: false},
     ],
+    //Photo by Ivan Aleksic on Unsplash
     image: "assets/images/i can see for miles.jpg"
   },
   { 
@@ -98,6 +107,7 @@ let questionList = [
       { choice: "Venus- Shocking Blue", correct: false},
       { choice: "Moonchild- Iron Maiden", correct: false},
     ],
+    //Photo by Tengyart on Unsplash
     image: "assets/images/venus in furs.jpg" 
   },
   { 
@@ -108,6 +118,7 @@ let questionList = [
       { choice: "Safety Chain Blues- Midnight Oil", correct: false},
       { choice: "The Chain- Fleetwood Mac", correct: true},
     ],
+    //Photo by Pascal Debrunner on Unsplash
     image: "assets/images/the chain.jpg" 
   },
   { 
@@ -118,6 +129,7 @@ let questionList = [
       { choice: "A Thousand Miles Away- The Heartbeats", correct: false},
       { choice: "A Million Miles Away- Rory Gallagher", correct: true},
     ],
+    //Photo by Casey Horner on Unsplash
     image: "assets/images/a million miles away.jpg" 
   },
 ];
@@ -151,7 +163,7 @@ function showQuestion(currentQuestion){
     document.getElementById("option2").innerText = currentQuestion.options[1].choice;
     document.getElementById("option3").innerText = currentQuestion.options[2].choice;
     document.getElementById("option4").innerText = currentQuestion.options[3].choice;
-};
+}
 
 /* Displaying the next question. Timer to skip to next question */ 
 function showNextQuestion(){
@@ -163,7 +175,7 @@ function showNextQuestion(){
   else{
     setTimeout(gameOver, 1500);
   }
-};
+}
 
 /* Resets the  next question from previous selection */
 function resetOptions(){
@@ -171,7 +183,7 @@ function resetOptions(){
     button.classList.remove("correct-answer");
     button.classList.remove("wrong-answer");
   });
-};
+}
 
 /* Using The Durstenfeld Shuffle. 
 Found on Pitayan(https://pitayan.com/posts/javascript-shuffle-array/) which directed me to
@@ -181,7 +193,7 @@ function shuffle(questionList) {
         let j = Math.floor(Math.random() * (i + 1));
         [questionList[i], questionList[j]] = [questionList[j], questionList[i]];
     }
-};
+}
 
  /* User answer validation */
 function validateAnswer(event){
@@ -190,7 +202,8 @@ function validateAnswer(event){
     const clickedButton = event.target;
     const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
     const answer = currentQuestion.options[userAnswer];
-  /* if/else statement to check answers and award point/or not */
+  /* if/else statement to check answers and award point/or not 
+  buttons turn red if wrong, green if correct (connected to CSS) */
   if (answer.correct === true){
     console.info("Correct Answer");
     score = score + 1;
@@ -206,19 +219,19 @@ function validateAnswer(event){
     resetOptions();
     showNextQuestion();
     buttonBlocked = false;
-  }, 1500)
+  }, 1500);
 }
-};
+}
 
 function gameOver(){
-  document.getElementById("score").innerText = `Game Over! You scored ${score}/5`;
-};
+  document.getElementById("score").innerText = `Game Over! You scored ${score}/5,`;
+}
 
 /* Restart message and option */
 function gameOver(){
   document.getElementById('question-holder').classList.add('hidden');
-  document.getElementById("score").innerText = `Game Over! You scored ${score}/5. Click the start button to try again!`;
-};
+  document.getElementById("score").innerText = `Game Over! You scored ${score}/5, Click the start button to try again!`;
+}
 
 document.querySelectorAll("button.answer").forEach((button)=>{
   button.addEventListener("click", validateAnswer);

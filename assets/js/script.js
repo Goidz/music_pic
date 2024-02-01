@@ -67,7 +67,7 @@ let questionList = [
     image: "assets/images/immigrant song.jpg"
   },
   { 
-    question: "This song is by a band whos drummer wrote most of their lyrics, he also wrote 6 books and passed awya in 2020.",
+    question: "This song is by a band whos drummer wrote most of their lyrics. He also published 6 books and sadly passed away in 2020.",
     options: [
       { choice: "Learning to fly- Pink Floyd", correct: false},
       { choice: "Jet Airliner- Steve Miller Band", correct: false},
@@ -78,20 +78,20 @@ let questionList = [
     image: "assets/images/fly by night.jpg"
   },
   { 
-    question: "This song is by a band who played Woodstock after The Grateful Dead at 3am, founded by 2 brothers and their two High-School friends.",
+    question: "This song is by a band who played Woodstock after The Grateful Dead at 3am. They were founded by 2 brothers and their two High-School friends.",
     options: [
       { choice: "Black Magic Woman- Santana", correct: false},
       { choice: "Don't Kill the Magic- Magic!", correct: false},
-      { choice: "3 Is a Magic Number- Blind Melon", correct: false},
+      { choice: "3 is a Magic Number- Blind Melon", correct: false},
       { choice: "I Put a Spell on You- Creedence Clearwater Revival", correct: true},
     ],
     //Photo by Elena Mozhvilo on Unsplash
     image: "assets/images/i put a spell on you.jpg"
   },
   { 
-    question: "This band made the Guinness Book of Records for loudest concert and created the first successful Rock Opera.",
+    question: "This band made the Guinness Book of Records for loudest concert. They also created the first successful Rock Opera.",
     options: [
-      { choice: "A Thousand Miles Away- The Heartbeats", correct: false},
+      { choice: "A Thousand Miles away- The Heartbeats", correct: false},
       { choice: "Eight Miles High- The Byrds.", correct: false},
       { choice: "I can see for Miles- The Who", correct: true},
       { choice: "3/5 of a Mile in 10 Seconds- Jefferson Airplane", correct: false},
@@ -100,7 +100,7 @@ let questionList = [
     image: "assets/images/i can see for miles.jpg"
   },
   { 
-    question: "This band was managed by Andy Warhol and they're named after a paper-back adult novel.",
+    question: "This band was managed by Andy Warhol. They are named after a paper-back adult novel.",
     options: [
       { choice: "Venus in furs- The Velvet Underground", correct: true},
       { choice: "Jupiter Crash- The Cure", correct: false},
@@ -111,7 +111,7 @@ let questionList = [
     image: "assets/images/venus in furs.jpg" 
   },
   { 
-    question: "This was a British-American rock band originating from London. They are named after the rhythm-section members.",
+    question: "This was a British-American rock band originating from London. They are named after the rhythm-section's members.",
     options: [
       { choice: "Unchained- Van Halen", correct: false},
       { choice: "Rocky Paths- Hawkwind", correct: false},
@@ -122,15 +122,48 @@ let questionList = [
     image: "assets/images/the chain.jpg" 
   },
   { 
-    question: "Born in Ireland with influences such as Muddy Waters and Lead Belly, this artist released an album who's title is used for a die with 2 spots.",
+    question: "Born in Ireland with influences such as Muddy Waters and Lead Belly. This artist released an album with a title also used to describe a die with 2 spots.",
     options: [
-      { choice: "So Far Away- Rod Steward", correct: false},
+      { choice: "So Far away- Rod Steward", correct: false},
       { choice: "I can see for Miles- The Who", correct: false},
-      { choice: "A Thousand Miles Away- The Heartbeats", correct: false},
-      { choice: "A Million Miles Away- Rory Gallagher", correct: true},
+      { choice: "A Thousand Miles away- The Heartbeats", correct: false},
+      { choice: "A Million Miles away- Rory Gallagher", correct: true},
     ],
     //Photo by Casey Horner on Unsplash
     image: "assets/images/a million miles away.jpg" 
+  },
+  { 
+    question: "Formed in London 1962 with a debut album two years later. This band's original name was The Blues Boys",
+    options: [
+      { choice: "Psychedelic Shack- The Temptations", correct: false},
+      { choice: "Gimme Shelter- The Rolling Stones", correct: true},
+      { choice: "Shelter- The Beach Boys", correct: false},
+      { choice: "Gimme Shelter- Grand Funk Railroad", correct: false},
+    ],
+    //Photo by alexey turenkov on Unsplash
+    image: "assets/images/gimme shelter.jpg" 
+  },
+  { 
+    question: "An early press release stated this band's music was so loud. If they moved in next door, 'your lawn would die.'",
+    options: [
+      { choice: "The Joker- Steve Miller Band", correct: false},
+      { choice: "Diamond Jack- Wishbone Ash", correct: false},
+      { choice: "Queen of Hearts- Saxon", correct: false},
+      { choice: "Ace of Spades- MotörHead", correct: true},
+    ],
+    //Photo by Inês Ferreira on Unsplash
+    image: "assets/images/ace in the hole.jpg" 
+  },
+  { 
+    question: " The vocalist got expelled from school for urinating in the headmaster's dinner. He is also a pilot that flies the bands plane.",
+    options: [
+      { choice: "Midnight Rider- The Allman Brothers Band", correct: false},
+      { choice: "Living after Midnight- Judas Priest", correct: false},
+      { choice: "2 Minutes to Midnight- Iron Maiden", correct: true},
+      { choice: "Midnight Rambler- The Rolling Stones", correct: false},
+    ],
+    //Photo by alexandru vicol on Unsplash
+    image: "assets/images/two minutes to midnight.jpg" 
   },
 ];
 

@@ -21,7 +21,7 @@ I started this project by creating a wireframe using Balsamic.
 ### The landing page.
 ![Landing Page](docs/musicpic-landing-page.png)
 
-The landing page consists of a Header in bright yellow, a themed background of old radios and an area with instructions and a start button.
+The landing page consists of a Header in bright yellow, a themed background of old radios and an area with instructions and a start button which takes you to the game page.
 Located at the bottom of the page are links to Facebook, Instagram, Spotify and Wikipedia. The latter two are features added for the user to have easy access to expand upon the game. By using Spotify one could easily add a music streaming element to the game. Wikipedia adds extra information on a topic at hand. 
 
 

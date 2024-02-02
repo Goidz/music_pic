@@ -53,7 +53,7 @@ body {
 }
 
 /* Hides image on start page so there's a distinction between start and game pages */
-hidden{
+.hidden{
     display: none !important;
 }
 

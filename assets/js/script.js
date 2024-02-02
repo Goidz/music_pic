@@ -9,7 +9,7 @@ let questionList = [
       { choice: "Shake Dog Shake- The Cure", correct: false},
     ],
     //- [ ] Photo by Don Agnello on Unsplash
-    image: "assets/images/i_wanna_be_your_dog.jpg", 
+    image: "assets/images/i_wanna_be_your_dog.webp", 
   },
   {
     question: "This song is by an artist who famously played his guitar upside down.",
@@ -20,7 +20,7 @@ let questionList = [
       { choice: "Out in the Fields", correct: false},
     ],
     //Photo by Aron Fjell on Unsplash 
-    image: "assets/images/red-house.jpg",
+    image: "assets/images/red_house.webp",
   },
   {
     question: "This song is by a band who's name was derived from a comcic book character. They also have a popular song referencing a type of alcohol.",
@@ -31,7 +31,7 @@ let questionList = [
       { choice: "The Prisoner- Tears for Fears", correct: false},
     ],
     //Photo by Emiliano Bar on Unsplash
-    image: "assets/images/jailbreak.jpg",
+    image: "assets/images/jailbreak.webp",
   },
   { 
     question: "Several of this band's members died in a plane crash. They have a hit song about a Southern State.",
@@ -42,7 +42,7 @@ let questionList = [
       { choice: "Free Bird- Lynyrd Skynyrd", correct: true},
     ],
     //Photo by Hasan Almasi on Unsplash 
-    image: "assets/images/free-bird.jpg",
+    image: "assets/images/free_bird.webp",
   },
   { 
     question: "This song was by a British punk band. Their self-titled debut album was released in 1977.",
@@ -53,7 +53,7 @@ let questionList = [
       { choice: "Westend Girls- Pet Shop Boys", correct: false},
     ],
     //Photo by John Jackson on Unsplash
-    image: "assets/images/london-calling.jpg",
+    image: "assets/images/london_calling.webp",
   },
   { 
     question: "This song was by a band who first performed as The New Yardbirds.",
@@ -64,7 +64,7 @@ let questionList = [
       { choice: "Illegal Alien- Genesis", correct: false},
     ],
     //Photo by Boston Public Library on Unsplash
-    image: "assets/images/immigrant-song.jpg",
+    image: "assets/images/immigrant_song.webp",
   },
   { 
     question: "This song is by a band whos drummer wrote most of their lyrics. He also published 6 books and sadly passed away in 2020.",
@@ -75,7 +75,7 @@ let questionList = [
       { choice: "Fly by Night- Rush", correct: true},
     ],
     //Photo by Katie Hetland on Unsplash
-    image: "assets/images/fly_by_night.jpg",
+    image: "assets/images/fly_by_night.webp",
   },
   { 
     question: "This song is by a band who played Woodstock after The Grateful Dead at 3am. They were founded by 2 brothers and their two High-School friends.",
@@ -86,7 +86,7 @@ let questionList = [
       { choice: "I Put a Spell on You- Creedence Clearwater Revival", correct: true},
     ],
     //Photo by Elena Mozhvilo on Unsplash
-    image: "assets/images/i_put_a_spell_on_you.jpg",
+    image: "assets/images/i_put_a_spell_on_you.webp",
   },
   { 
     question: "This band made the Guinness Book of Records for loudest concert. They also created the first successful Rock Opera.",
@@ -97,7 +97,7 @@ let questionList = [
       { choice: "3/5 of a Mile in 10 Seconds- Jefferson Airplane", correct: false},
     ],
     //Photo by Ivan Aleksic on Unsplash
-    image: "assets/images/i_can_see_for_miles.jpg",
+    image: "assets/images/i_can_see_for_miles.webp",
   },
   { 
     question: "This band was managed by Andy Warhol. They are named after a paper-back adult novel.",
@@ -108,7 +108,7 @@ let questionList = [
       { choice: "Moonchild- Iron Maiden", correct: false},
     ],
     //Photo by Tengyart on Unsplash
-    image: "assets/images/venus_in_furs.jpg", 
+    image: "assets/images/venus_in_furs.webp", 
   },
   { 
     question: "This was a British-American rock band originating from London. They are named after the rhythm-section's members.",
@@ -119,7 +119,7 @@ let questionList = [
       { choice: "The Chain- Fleetwood Mac", correct: true},
     ],
     //Photo by Pascal Debrunner on Unsplash
-    image: "assets/images/the-chain.jpg", 
+    image: "assets/images/the_chain.webp", 
   },
   { 
     question: "Born in Ireland with influences such as Muddy Waters and Lead Belly. This artist released an album with a title also used to describe a die with 2 spots.",
@@ -130,7 +130,7 @@ let questionList = [
       { choice: "A Million Miles away- Rory Gallagher", correct: true},
     ],
     //Photo by Casey Horner on Unsplash
-    image: "assets/images/a_million_miles_away.jpg", 
+    image: "assets/images/a_million_miles_away.webp", 
   },
   { 
     question: "Formed in London 1962 with a debut album two years later. This band's original name was The Blues Boys",
@@ -141,7 +141,7 @@ let questionList = [
       { choice: "Gimme Shelter- Grand Funk Railroad", correct: false},
     ],
     //Photo by alexey turenkov on Unsplash
-    image: "assets/images/gimme-shelter.jpg", 
+    image: "assets/images/Gimme_shelter.webp", 
   },
   { 
     question: "An early press release stated this band's music was so loud. If they moved in next door, 'your lawn would die.'",
@@ -152,7 +152,7 @@ let questionList = [
       { choice: "Ace of Spades- MotörHead", correct: true},
     ],
     //Photo by Inês Ferreira on Unsplash
-    image: "assets/images/ace_in_the_hole.jpg", 
+    image: "assets/images/ace_in_the_hole.webp", 
   },
   { 
     question: " The vocalist got expelled from school for urinating in the headmaster's dinner. He is also a pilot that flies the bands plane.",
@@ -163,7 +163,7 @@ let questionList = [
       { choice: "Midnight Rambler- The Rolling Stones", correct: false},
     ],
     //Photo by alexandru vicol on Unsplash
-    image: "assets/images/two_minutes_to_midnight.jpg", 
+    image: "assets/images/two_minutes_to_ midnight.webp", 
   },
 ];
 

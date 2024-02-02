@@ -48,19 +48,18 @@ body {
 /* Quiz question images */
 #image{
     width: 80%;
-    height: auto;
+    height: 100%;
     margin-left: 10%;
 }
 
 /* Hides image on start page so there's a distinction between start and game pages */
-.hidden{
+hidden{
     display: none !important;
 }
 
 /* Instruction section */
 #instruction {
     font-size: 1.3rem;
-    
     margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;

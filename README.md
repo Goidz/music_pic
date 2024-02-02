@@ -1,110 +1,119 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MusicPic.
+This is my portfolio2 project for the Code Institute Full-stack developer course.
 
-Welcome Gideon Horn,
+MusicPic is an in-hand music quiz mainly aimed at people on the go. The idea of the website is to be something fun to do on your way to work, for example. 
+I tried to develop a website that is easy to use and navigate. Test your knowledge on music and have fun by yourself or with others, at a game night. 
+Easy access to Spotify is already in the app and Wikipedia is linked at the bottom also if the user wants to expand on what they've learnt. 
+I have gotten great feedback the only negative comments being a small question pool. I hope to increase this in the future. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The questions are based on a combination of an image and a hint. 
+Players have a multiple-choice button area to make a selection from. After 5 questions a score is presented out of 5 and a possibility to restart a new game. 
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# The Giddy Goat.
+This is my portfolio project for the Code Institute Full-stack developer course.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The Giddy Goat is a fictitious live music venue. The aim of this website is to attempt to show what a music venue's website should look like from the perspective of a live music lover and hopefully also other like-minded individuals. I aimed to create a website that is easy to navigate and quickly gives the information most important to the user, and in turn encourage repeat use. Through sharing the website with other people, I have gotten very positive feedback, with the only critique being the lack of a drink's and/or food menu. Unfortunately, I have not had the time to implement this.
 
-To log into the Heroku toolbelt CLI:
+[Welcome to the Giddy Goat!](https://goidz.github.io/the-giddy-goat/)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Layout and features.
+The website consists of three separate pages, all are accessed by a navigation bar at the top of the home-page.
+![Navigation bar](docs_imgs_readme/nav_bar.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Home-page.
+At the top of the home-page is the navigation bar. The venue title also acts as navigation back to the home-page. To the right is the gigs-page and about-page headings, which links to their respective pages. A title attribute is embedded in each, giving the user information on page location when hovered by a mouse.
+Underneath the navigation bar is the main image. It strives to set the tone of the venue and website, and hopefully is striking enough to encourage the user to explore further.
+Layered atop the main image is the address and further down the page the user can find Google Maps that also links to said page.
+The bottom of the page consist of functioning social media icons and an icon that links back to the top of the page. All the icons were created using Fontawesome.com. (All the icons are linked to home-pages of the websites they represent because it's a fictitious establishment)
 
-------
+![Top of the home-page](docs_imgs_readme/home-screen_top.png)  ![Bottom of home-page](docs_imgs_readme/home-screen_bottom.png)
 
-## Release History
+### Gigs-page.
+When the gigs-page is selected, it navigates to the venues events section. All the events are placed in a column and has a link to a ticket website. (In this case, to eventim.de) I selected the fonts of the events rows using the randomized pallets on Venngage.com. The choices were based on trying to make the site easier to use for the visually impaired. At the bottom of the page Google-maps can again be found and underneath that again the social media icons. In addition to these icons, there's also Spotify and YouTube to assist and encourage users to discover new music. Both icons link to their respective homepages and are generated using Fontawesome.com
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Top of the Gigs-page](docs_imgs_readme/gigs_top.png) ![Bottom of the Gigs-page](docs_imgs_readme/footer_gigs.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+### About page.
+The about page consists of an introduction of the venue and a contact section with an email link that links directly to the user's internal email program. Again, Google-maps and a footer with social media links and an icon linking to the top of the page.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Top of the about-page](docs_imgs_readme/about_top.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Outstanding elements of the page.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Unfortunately, I ran out of time to finalize everything I would have liked to.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-Some of the media queries are not perfect, and I would like to rectify these at a later date.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The following testing was done:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+-W3C HTML Validator reported no errors.
+-w3c CSS Validator reported no errors.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![html-index](docs_imgs_readme/w3c_html_index.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![html-gigs-page](docs_imgs_readme/w3c_html_gigs.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![html-about-page](docs_imgs_readme/w3c_html_about.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![CSS](docs_imgs_readme/w3c_csn_index.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+I also ran the code through AmIResponsive.co.uk.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![am i responsive](docs_imgs_readme/am-i-responsive.png)
 
-------
+Lastly, I ran it through Google Chrome Lighthouse.
 
-## FAQ about the uptime script
+![lighthouse-index](docs_imgs_readme/lighthouse_index.png)  ![lighthouse-gigs](docs_imgs_readme/lighthouse_gigs.png)    ![lighthouse-about](docs_imgs_readme/lighthouse_about.png)
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Bug fixes and to do.
 
-**How will this affect me?**
+ - Lighthouse pointed out that there was no title attribute in the Iframe used for Google-maps.
+ - Have forgotten numerous closing tags in the HTML during the course of this project.
+ - There was an (x-y)overflow problem on larger devices. I think solved this by adding scroll on the y-access and overflow-hide on the y-axis. 
+ - I struggled with colours on certain parts of the website but solved that by utilizing Venngage.com's randomized pallet function.
+ - I struggled a lot with media queries, which will be noticeable on some devices in landscape mode. Some are fixed, but many aren't.
+ 
+ ## Websites used for assistance.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ [Venngage for colour pallets](https://venngage.com/) (Unfortunately the link does not want to work.)
+ 
+ [Font Awesome for icons throughout the webpage](https://fontawesome.com)
+ 
+ [Favicon taken from Favicon.cc_ by Miche99e](https://www.favicon.cc)
+ 
+ [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+ 
+ [Responsive Design Test](https://amiresponsive.co.uk)
+ 
+ [Map](https://www.google.com/maps)
+ 
+ [Google Fonts](https://fonts.google.com/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+ ## Deployment.
 
-**So….?**
+- In the repository section in GitHub, click on "The Giddy Goat".
+- click the 'Settings' in the middle near the top of the page.
+- On the left side of the page under "Code and Automation" select 'Pages' at the bottom of the section.
+- Under "Build and Deployment" > "Source" find the dropdown menu under "Branch" and select  "Main".
+- Click the 'Save' button.
+- Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Used resources.
 
-**Can I opt out?**
+Inspiration and guidance from especially [W3School](https://www.w3schools.com/) and [Mdn Developers](https://developer.mozilla.org/en-US/)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## acknowledgements
+Antonio Rodriguez for all his help!

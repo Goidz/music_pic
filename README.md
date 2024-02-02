@@ -11,8 +11,6 @@ I have gotten great feedback the only negative comments being a small question p
 
 ## Layout and features.
 
-![Am I Responsive image](musicpic-responsivity.png)
-
 
 
 

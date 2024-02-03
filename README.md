@@ -7,7 +7,7 @@ I have gotten great feedback concerning the layout and design. In addition, the 
 
 [Welcome to MusicPic!](https://goidz.github.io/musicpic/)
 
-## Project planning.
+## Project planning:
 
 ### The site's Wireframe.
 
@@ -20,19 +20,19 @@ I have gotten great feedback concerning the layout and design. In addition, the 
 I started this project by creating a wireframe using Balsamic.
 
 
-## Layout and Features.
+## Layout and Features:
 
  ![Responsive test](docs/musicpic-responsivity.png)
 
 [Used amiresponsive for responsivity testing](https://amiresponsive.co.uk.)
 
-### The landing page.
+### The landing page:
 ![Landing Page](docs/musicpic-landing-page.png)
 
 The landing page consists of a Header in bright yellow, a themed background of old radios and an area with instructions and, a start button that takes you to the game page.
 Located at the bottom of the page are links to Facebook, Instagram, Spotify and Wikipedia. The latter two are features added for the user to have easy access to expand upon the game. By using Spotify, one could easily add a music streaming element to the game. Wikipedia adds extra information on the topic at hand. 
 
-### Game page.
+### Game page:
 
 ![Game Page](docs/musicpic-question-page.png)
 
@@ -45,24 +45,29 @@ Underneath is the hint image which is related to a song title.
 Below the hint image is a clue written in the form of an anecdote or fact.
 
 Following the image, players have a multiple-choice button area to make a selection from. 
-After each question, the current score is shown beneath this area.
-After five questions have been answered, a total score out of "5" is presented along with the possibility of starting a new game. 
+After an answer has been selected, it automatically jumps to the next question and the new score is shown beneath.
+After five questions have been answered, a total score out of five is presented along with the possibility of starting a new game. 
 
-### Game page in progress.
+### Game page in progress:
 <details>
 
 ![Question page- mid-game](docs/musicpic-question-page-followup.png)
 
 </details>
 
-### Game page: Game over.
+### Game page: Game over:
 <details>
 
 ![Question page- Game Over](docs/musicpic-question-page-end.png)
 
 </details>
 
-## Testing.
+## Programming Languages used:
+- HTML
+- CSS
+- JavaScript
+
+## Testing:
 
 ### The following testing was carriend out:
 
@@ -142,7 +147,7 @@ Credit to these artists for their amazing work.
   - [alexandru vicol](https://unsplash.com/@alex_vicol?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   - [Inês Ferreira](https://unsplash.com/@inesrochaferreira?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   - [alexey turenkov](https://unsplash.com/@2renkov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-+ [Spell checking done with](https://languagetool.org/)
++ Spell checking done with[LanguageTool](https://languagetool.org/)
 + I tested the responsivity with [Am I Responsive](https://amiresponsive.co.uk).
 + [Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1) was used to test performance, accessibility, best practices (trust and safety), and SEO (basic search engine optimization).
 + [W3C](https://validator.w3.org/) HTML validator was used to check the HTML code of the page.

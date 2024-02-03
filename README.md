@@ -1,11 +1,9 @@
 # MusicPic.
 This is my portfolio2 project for the Code Institute Full-stack developer course.
 
-MusicPic is an in-hand music quiz mainly aimed at people on the go. The idea of the website is to be something fun to do on your way to work, for example. 
-I tried to develop a website that is easy to use and navigate. 
-Test your knowledge on music and have fun by yourself or with others, at a game night. 
-Easy access to Spotify is already in the app and Wikipedia is linked at the bottom also if the user wants to expand on what they've learnt. 
-I have gotten great feedback the only negative comments being a small question pool. At the moment there are only 15 questions in the question pool. I hope to increase this in the future. 
+MusicPic is an in-hand music quiz mainly aimed at people on the go. The idea of the website is to be something that is fun but also educational and inspires to discover music. Test your knowledge on music and have fun on your way to work or with friends on a game night.
+I tried to develop a website that is easy to use and navigate. The website provides easy access to Spotify and Wikipedia so the user can expand on what they've learnt and explore music. 
+I have gotten great feedback concerning the layout and design. In addition, the test subjects all expressed that they would enjoy such a game on a game night with friends. The only negative comments were the small question pool. At the moment there are only 15 questions, but I can and intend to increase this in the future. 
 
 [Welcome to MusicPic!](https://goidz.github.io/musicpic/)
 
@@ -38,16 +36,17 @@ Located at the bottom of the page are links to Facebook, Instagram, Spotify and 
 
 ![Game Page](docs/musicpic-question-page.png)
 
-The game page are again made up of the header and instrucctions.
+The game page is again made up of the header and instrucctions.
 
-Underneath is the hint-image. 
-The image is related to a song-title.
+The questions are shuffled before each game starts.
+
+Underneath is the hint-image which is related to a song-title.
 
 Below the hint-image is a clue written in the form of an anecdote or fact.
 
-Following the image players have a multiple-choice button area to make a selection from. 
+Following the image, players have a multiple-choice button area to make a selection from. 
 After each question the current score is shown beneath this area.
-After 5 questions a score is presented out of 5 and a possibility to restart a new game. 
+After 5 questions have been answered, a total score out of 5 is presented together with a possibility to start a new game. 
 
 ### Game page in progress.
 <details>
@@ -96,8 +95,6 @@ After 5 questions a score is presented out of 5 and a possibility to restart a n
 
 </details>
 
-
-
 + Tested the the game page in Google Lighthouse and got adequite results.
 <details>
 
@@ -115,11 +112,14 @@ After 5 questions a score is presented out of 5 and a possibility to restart a n
 
 ## Acknowledements: 
 
-+ Used The Durstenfeld Shuffle. It seems like it maybe shuffles slightly better than the Fisher Yates shuffle.
-  - Found on [Pitayan](https://pitayan.com/posts/javascript-shuffle-array/) which directed me to
++ The Durstenfeld Shuffle was discovered on [Pitayan's](https://pitayan.com/posts/javascript-shuffle-array/) which directed me to
     [Webbower](https://gist.github.com/webbower/8d19b714ded3ec53d1d7ed32b79fdbac) where I sourced it from.
++ [Google Fonts](https://fonts.google.com/) Tilt Neon font was use throughout the website. 
++ I used [TinyPNG](https://tinypng.com/) to compress my images.
++ I then used [Pixelied](https://pixelied.com/) and [Convertio](https://convertio.co/) to convert jpg images to WebP formats
+  for better performance.   
 
-+ Found all the images used on the site on [Unsplash](https://unsplash.com/)
++ I Found all the images used on the site on [Unsplash](https://unsplash.com/).
   Credit to these artists amazing work.
   - [Aron Fjell](https://unsplash.com/@addekalk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   - [Andrea De Santis](https://unsplash.com/@santesson89?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
@@ -137,7 +137,30 @@ After 5 questions a score is presented out of 5 and a possibility to restart a n
   - [Don Agnello](https://unsplash.com/@donangel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   - [alexandru vicol](https://unsplash.com/@alex_vicol?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   - [Inês Ferreira](https://unsplash.com/@inesrochaferreira?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-  - 
+  - [alexey turenkov](https://unsplash.com/@2renkov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
++ I tested the responsivity with [Am I Responsive](https://amiresponsive.co.uk).
++ [Chrome Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1) was used to test performance, accessability, best practices(trust and safety) and SEO (basic search engine optimization).
++ [W3C](https://validator.w3.org/) HTML validator was used to check the HTML code of the page.
++ [Jigsaw](https://jigsaw.w3.org/css-validator/) CSS validator was used to check the CSS code of the page.
++ [Beautify Tools's](https://beautifytools.com/javascript-validator.php) Javascript validator to check Javascript code.
++ [Font Awesome](https://fontawesome.com/) for icons throughout the webpage.
+
+
+## Bug fixes and ToDo:
+
++ Couldn't figure out how to shuffle the questions with a minimal amount of repitition. I discovered and used The Durstenfeld Shuffle. It seems like it might shuffles slightly better than the Fisher Yates shuffle. However shuffeling is a much more complex topic than I ever imagined and I am looking forward to finding a flawless algorythm.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

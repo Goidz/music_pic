@@ -112,13 +112,16 @@ After 5 questions have been answered, a total score out of 5 is presented togeth
 
 ## Acknowledements: 
 
++ My tutor Antonio Rodriguez for all his guidance, patiance and support!
 + The Durstenfeld Shuffle was discovered on [Pitayan's](https://pitayan.com/posts/javascript-shuffle-array/) which directed me to
     [Webbower](https://gist.github.com/webbower/8d19b714ded3ec53d1d7ed32b79fdbac) where I sourced it from.
 + [Google Fonts](https://fonts.google.com/) Tilt Neon font was use throughout the website. 
 + I used [TinyPNG](https://tinypng.com/) to compress my images.
 + I then used [Pixelied](https://pixelied.com/) and [Convertio](https://convertio.co/) to convert jpg images to WebP formats
-  for better performance.   
-
+    for better performance.   
++ Inspiration and guidance from especially [W3School](https://www.w3schools.com/),
+  [Mdn Developer](https://developer.mozilla.org/en-US/), [Stack Overflow](https://stackoverflow.com/)
+    and [Geeks for Geeks](https://www.geeksforgeeks.org/)
 + I Found all the images used on the site on [Unsplash](https://unsplash.com/).
   Credit to these artists amazing work.
   - [Aron Fjell](https://unsplash.com/@addekalk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
@@ -149,10 +152,26 @@ After 5 questions have been answered, a total score out of 5 is presented togeth
 
 ## Bug fixes and ToDo:
 
-+ Couldn't figure out how to shuffle the questions with a minimal amount of repitition. I discovered and used The Durstenfeld Shuffle. It seems like it might shuffles slightly better than the Fisher Yates shuffle. However shuffeling is a much more complex topic than I ever imagined and I am looking forward to finding a flawless algorythm.
++ Couldn't figure out how to shuffle the questions with a minimal amount of repitition.
+   I discovered and used The Durstenfeld Shuffle.
+   It seems like it might shuffles slightly better than the Fisher Yates shuffle.
+   Using this method meant that the questions never repeated themselves in the same game.
+   However shuffeling is a much more complex topic than I ever imagined and I am looking forward to finding a "flawless" algorythm.
++ Have had many typing errors during the course of this project which has slowed down progress.
+   I need to improve my typing accuracy.
++ The search compilation of the questions took so much longer than I thought.
+   I would like to add more questions to the game in the future
++ I would also like to add a score card feature for when the user wants to use it at a game night.  
 
 
+## Deployment:
 
++ In the repository section in GitHub, click on "MusicPic".
++ Click the 'Settings' in the middle near the top of the page.
++ On the left side of the page under "Code and Automation" select 'Pages' at the bottom of the section.
++ Under "Build and Deployment" > "Source" find the dropdown menu under "Branch" and select "Main".
++ Click the 'Save' button.
++ Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
 
 

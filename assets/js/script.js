@@ -233,17 +233,20 @@ function validateAnswer(event){
   if(buttonBlocked === false){
      buttonBlocked = true;
     const clickedButton = event.target;
-    const userAnswer = parseInt(clickedButton.getAttribute("data-option")); /* Converts string to integer */
+    /* Converts string to integer */
+    const userAnswer = parseInt(clickedButton.getAttribute("data-option")); 
     const answer = currentQuestion.options[userAnswer];
   /* if/else statement to check answers and award point/or not 
   buttons turn red if wrong, green if correct (connected to CSS) */
   if (answer.correct === true){
     console.info("Correct Answer");
-    score = score + 1;
+    score = score + 1;   
+    /* Calls the Css class and turns button red on wrong answer selection */
     clickedButton.classList.add("correct-answer");
     document.getElementById("score").innerText = `Score: ${score}/5`;
   }
-  else{
+  else{ 
+    /* Calls the Css class and turns button red on wrong answer selection */
     console.error("Wrong answer");
     clickedButton.classList.add("wrong-answer");
   } 

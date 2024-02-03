@@ -271,6 +271,5 @@ function gameOver(){
 
 document.querySelectorAll("button.answer").forEach((button)=>{
   button.addEventListener("click", validateAnswer);
-
 });
 

@@ -9,7 +9,7 @@ I have gotten great feedback concerning the layout and design. In addition, the 
 
 ## Project planning:
 
-### The site's Wireframe.
+### The site's Wireframe (Click "Details" below).
 
 <details>
 
@@ -18,7 +18,6 @@ I have gotten great feedback concerning the layout and design. In addition, the 
 </details>
 
 I started this project by creating a wireframe using Balsamic.
-
 
 ## Layout and Features:
 
@@ -48,14 +47,14 @@ Following the image, players have a multiple-choice button area to make a select
 After an answer has been selected, it automatically jumps to the next question and the new score is shown beneath.
 After five questions have been answered, a total score out of five is presented along with the possibility of starting a new game. 
 
-### Game page in progress:
+### Game page in progress (Click "Details" below):
 <details>
 
 ![Question page- mid-game](docs/musicpic-question-page-followup.png)
 
 </details>
 
-### Game page: Game over:
+### Game page: Game over (Click "Details" below):
 <details>
 
 ![Question page- Game Over](docs/musicpic-question-page-end.png)
@@ -69,9 +68,9 @@ After five questions have been answered, a total score out of five is presented 
 
 ## Testing:
 
-### The following testing was carriend out:
+### The following tests were carried out:
 
-+ Ran the HTML code through the W3C-HTML validator, resulting in no errors.
++ Ran the HTML code through the W3C-HTML validator, resulting in no errors (Click "Details" below).
 <details>
   
 ![W3C-HTML Validator](docs/musicpic-w3c-html.png)
@@ -79,28 +78,28 @@ After five questions have been answered, a total score out of five is presented 
 </details>
 
 
-+ Ran the CSS code through the W3C-CSS validator, resulting in no errors
++ Ran the CSS code through the W3C-CSS validator, resulting in no errors (Click "Details" below).
 <details>
   
 ![W3C-CSS Validator](docs/musicpic-w3c-css.png)
 
 </details>
 
-+ Ran the JavaScript code through the Beautify Tools validator, resulting in no errors
++ Ran the JavaScript code through the Beautify Tools validator, resulting in no errors (Click "Details" below).
 <details>
 
 ![Beautify Tools Validator](docs/musicpic-beautify-tools.png)
 
 </details>
 
-+ Tested the the landing page in Google Lighthouse and got adequate results.
++ Tested the the landing page in Google Lighthouse and got adequate results (Click "Details" below).
 <details>
 
 ![Google Lighthouse- Landing page](docs/musicpic-lighthouse-score-landing-page.png)
 
 </details>
 
-+ Tested the game page in Google Lighthouse and got adequate results.
++ Tested the game page in Google Lighthouse and got adequate results (Click "Details" below).
 <details>
 
 ![Google Lighthouse- Game page](docs/musicpic-lighthouse-score-game-page.png)
@@ -179,17 +178,7 @@ Credit to these artists for their amazing work.
 + Under "Build and Deployment" > "Source" find the dropdown menu under "Branch" and select "Main".
 + Click the 'Save' button.
 + Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
